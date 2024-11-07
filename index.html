@@ -4,34 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menus</title>
+    <title>Menus</title>
     <link rel="stylesheet" href="style.css">
     <style>
-body{
-    background-color: rgb(215, 217, 219);
-    color: rgb(255, 255, 255);
-    a{
-        text-decoration: none;
-        color: rgb(29, 29, 31);
-   
-        line-height: 2em;
-    }
-        ul{
-      text-align: center;
-      padding-top: 2em;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-   
-}
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        a:active {
+            transform: scale(1);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                padding-top: 20px;
+            }
+
+            a {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <header>MENUS</header>
+    <header>Menus</header>
     <ul>
-        <li> <a href="menu1.html"> menu simples</a></li>
-        <li> <a href="menu2.html">menu fixado </a> </li>
-        <li> <a href="menu3.html">menu lateral direita </a> </li>
-        <li> <a href="menu4.html">menu livre </a> </li>
+        <li><a href="menu1.html">Menu Simples</a></li>
+        <li><a href="menu2.html">Menu Fixado</a></li>
+        <li><a href="menu3.html">Menu Lateral Direita</a></li>
+        <li><a href="menu4.html">Menu Livre</a></li>
     </ul>
 </body>
 
